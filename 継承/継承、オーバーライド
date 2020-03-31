@@ -19,3 +19,36 @@ end
 
 
 となるとどうなる？
+
+
+
+----------------------------
+########## 親クラス runメソッドを定義################################
+class Car
+ #runメソッド
+ def run
+   puts '走る'
+ end
+
+ def start
+  puts 'アクセル'
+  run()
+ end
+end
+
+#########子クラス(Carクラスを継承している) runメソッドをオーバーライドしている####
+class SuperCar < Car
+ #runメソッドをオーバーライド（上書き）
+ def run
+   puts '超速く走る'
+ end
+ 
+
+end
+
+####################実行部分###################################
+#SuperCarクラスのインスタンス化を行う。
+supercar = SuperCar.new
+#SuperCarのオーバーライドされたrunメソッドを使用する。
+supercar.start
+
