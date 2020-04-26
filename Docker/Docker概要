@@ -48,5 +48,6 @@ dockerファイル作成
 FROM docker/whalesay:latest
 
 
+docker exec -it connect-test /bin/bash
 
 疑問点、エディタはどうやって使う？
