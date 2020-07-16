@@ -60,8 +60,27 @@ rspec モデルのテスト
 コントローラーのテスト
 
 # 命名規則
+変数:小文字スネークケース
+定数:大文字スネークケース
+クラス名:アッパーキャメルケース
+メソッド:小文字スネークケース、boolを返すメソッドはYes Noが返ることがわかる名前にする
+
 
 # コミットメッセージ
+https://qiita.com/numanomanu/items/45dd285b286a1f7280ed
+
+Type
+
+Must be one of the following:
+
+feat: A new feature
+fix: A bug fix
+docs: Documentation only changes
+style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+refactor: A code change that neither fixes a bug nor adds a feature
+perf: A code change that improves performance
+test: Adding missing or correcting existing tests
+chore: Changes to the build process or auxiliary tools and libraries such as documentation generation
 
 
 よくあるエラー備忘録
