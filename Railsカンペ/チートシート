@@ -84,5 +84,7 @@ chore: Changes to the build process or auxiliary tools and libraries such as doc
 
 
 # updateの文法
+@item = Item.find(1)
+@item.update( name: "Tシャツ )
 
 よくあるエラー備忘録
