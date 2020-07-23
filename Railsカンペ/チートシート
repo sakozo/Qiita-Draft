@@ -19,7 +19,7 @@ dockercomposeに工夫が必要
 
 # deviceの導入
 Gemfile 
-
+device独自のrails g
 # モデルとテーブルの作成
 モデルの作成、rails g model Model 単数形
 migrationファイルの形
