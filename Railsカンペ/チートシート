@@ -1,0 +1,90 @@
+アプリケーションの基本の流れ、
+dockerでRailsを立ち上げ
+データを入力view→データベースに保存controller model→データをデータベースから取り出す→ビューに表示までのチートシート
+非同期通信とrspecを使ったテスト作成まで
+
+# rails newで新しいアプリを作る
+dockerfile
+dockercompose.yml
+Rails newコマンド
+.gitignore
+不要なファイルの生成を止める
+rails db:create
+sequelpro接続
+
+# よく使うGemの導入
+pry
+better error
+dockercomposeに工夫が必要
+
+# deviceの導入
+Gemfile 
+device独自のrails g
+# モデルとテーブルの作成
+モデルの作成、rails g model Model 単数形
+migrationファイルの形
+カラムを追加したいとき
+制約を変更したいとき
+注意、参照先は先にテーブルが生成されるようにしないといけない
+
+# コントローラーの作成とルーティングの設定
+コントローラーの作成rails g controller 複数形
+7つ以外付け足し、
+ネストしたコントローラー
+
+ルーティングの設定
+root
+rails routes
+
+# フォームの作成、テーブルに保存
+フォームの作成
+formwith @変数　f
+ f.textfield
+ 
+コントローラー
+.saveで条件分岐
+
+# テーブルのから値を取り出してビューに表示
+モデル.find
+.whereとかでインスタンス変数に格納
+コントローラーのアクションがendまできたら次はアクション名のビューに飛ぶ
+〈%=@変数名%〉
+
+# 非同期通信化する
+Ajaxで
+
+# モデルにバリデーションの記述
+
+# テストの記述
+rspec モデルのテスト
+コントローラーのテスト
+
+# 命名規則
+変数:小文字スネークケース
+定数:大文字スネークケース
+クラス名:アッパーキャメルケース
+メソッド:小文字スネークケース、boolを返すメソッドはYes Noが返ることがわかる名前にする
+
+
+# コミットメッセージ
+https://qiita.com/numanomanu/items/45dd285b286a1f7280ed
+
+Type
+
+Must be one of the following:
+
+feat: A new feature
+fix: A bug fix
+docs: Documentation only changes
+style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+refactor: A code change that neither fixes a bug nor adds a feature
+perf: A code change that improves performance
+test: Adding missing or correcting existing tests
+chore: Changes to the build process or auxiliary tools and libraries such as documentation generation
+
+
+# updateの文法
+@item = Item.find(1)
+@item.update( name: "Tシャツ )
+
+よくあるエラー備忘録

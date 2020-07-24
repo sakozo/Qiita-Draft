@@ -1,0 +1,2 @@
+列に別名をつける
+select name as 名前, price as 価格 from products

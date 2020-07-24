@@ -1,5 +1,55 @@
 Dockerの概要
 
+インストール
+
+Gui設定メニュー
+上にくじらの表示
+
+helloworldイメージ
+ターミナル
+docker run hello_world
+ローカルにhello worldイメージがないかをまず探しに行く、なければdocker hubに探しに行く
+
+docker run
+＝
+pull
+create
+start
+
+docker hub
+
+
+イメージとは
+ファイルシステム
+イメージは読み取り専用
+
+イメージの継承
+OSのレイヤーにRuby runtimeのレイヤー
+
+whale say イメージで遊ぶ
+docker run docker/whalesay cowsay hello
+
+ダウンロード済みのイメージを表示
+docker images
+
+イメージの詳細情報
+docker inspect
+
+イメージの削除
+docker rmi docker/whalesay
+
+イメージを取得する
+docker pull docker/whalesay
+
+
+イメージを構築する
+dockerファイル作成
+
+FROM docker/whalesay:latest
+
+
+docker exec -it connect-test /bin/bash
+
 疑問点、エディタはどうやって使う？
 
 マウント
